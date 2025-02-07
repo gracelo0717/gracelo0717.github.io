@@ -1,27 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import About from './About';
-import Experience from './Experience';
-import Projects from './Projects';
-import Contact from './Contact';
 import '../styles.css';
 
 const App = () => {
   return (
-    <div>
-      <header>
-        <h1>Grace Lo's Portfolio</h1>
-      </header>
-      <main>
-        <About />
-        <Experience />
-        <Projects />
-        <Contact />
-      </main>
+    <div className='landing-page'>
+      <div className='landing-container'>
+        <h1>Grace Lo</h1>
+        <p>Software Engineer</p>
+        <div className='buttons-container'>
+          <button>About</button>
+          <button>Experience</button>
+          <button>Projects</button>
+          <button>Contact</button>
+        </div>
+      </div>
     </div>
   );
 };
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
-).render(<App />);
+);
+root.render(<App />);
