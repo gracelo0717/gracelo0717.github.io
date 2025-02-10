@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import '../styles.css';
-const profilePic = require('../assets/profile_pic.JPG');
+const profilePic = require('../assets/profile_pic.jpg');
 
 const App = () => {
   return (
