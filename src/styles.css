@@ -4,6 +4,22 @@ body {
   height: 100%;
   font-family: 'Inter', sans-serif;
   background-color: #d7d0c3;
+  display: flex;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100%;
+  background-color: #b5a99f;
+  padding-top: 20px;
+  z-index: 10;
 }
 
 .landing-page {
@@ -11,7 +27,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  padding: 0 20px;
+  margin-left: 250px;
 }
 
 .landing-header {
@@ -19,19 +35,22 @@ body {
   width: 100%;
   max-width: 700px;
   padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .profile-pic {
-  width: 35%;
-  height: 35%;
-  border-radius: 50px;
+  width: 40%;
+  height: 40%;
+  border-radius: 10px;
   margin-right: 20px;
 }
 
 .landing-header h1 {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
-  font-size: 2rem;
+  font-size: 3rem;
   color: #4e4e4e;
   margin-bottom: 20px;
 }
@@ -39,12 +58,12 @@ body {
 .landing-header p {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
-  font-size: 3.5rem;
+  font-size: 4rem;
   color: #6a6a6a;
   margin-top: 15px;
 }
 
-.buttons-container {
+/* .buttons-container {
   display: flex;
   justify-content: center;
   gap: 20px;
@@ -70,4 +89,4 @@ button:hover {
 
 button:focus {
   outline: none;
-}
+} */
