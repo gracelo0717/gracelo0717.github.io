@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import ReactDOM from 'react-dom/client';
 import '../styles.css';
 import Navbar from '../components/Navbar';
@@ -7,7 +7,6 @@ import About from './About';
 import Experience from './Experience';
 import Projects from './Projects';
 import Contact from './Contact';
-
 const profilePic = require('../assets/profile_pic.jpg');
 
 const App = () => {
@@ -33,6 +32,12 @@ const App = () => {
           <Route path='/projects' element={<Projects />} />
           <Route path='/contact' element={<Contact />} />
         </Routes>
+      </div>
+      <div>
+        <About />
+        <Experience />
+        <Projects />
+        <Contact />
       </div>
     </Router>
   );
