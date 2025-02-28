@@ -8,7 +8,57 @@ body {
   height: 100%;
   font-family: 'Inter', sans-serif;
   background-color: #d7d0c3;
+}
+
+.landing-page {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
+  margin-left: 60px;
+}
+
+.section {
+  min-height: 100vh;
+  scroll-snap-align: start;
+  padding: 40px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.landing-header {
+  text-align: center;
+  width: calc(100% - 60px);
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-pic {
+  width: 30%;
+  height: 30%;
+  border-radius: 10px;
+}
+
+.landing-header h1 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 3rem;
+  color: #4e4e4e;
+  margin: 0;
+}
+
+.landing-header p {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 4rem;
+  color: #6a6a6a;
+  margin: 0;
 }
 
 .navbar {
@@ -73,7 +123,7 @@ body {
   text-decoration: none;
   font-size: 1.5rem;
   padding: 10px;
-  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, color 0.2s ease;
 }
 
 .navbar-item:hover .navbar-link {
@@ -84,57 +134,6 @@ body {
   background-color: transparent;
 }
 
-.landing-page {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  min-height: 100vh;
-  margin-left: 250px;
-  overflow-y: auto;
-  padding-left: 20px;
-  scroll-snap-type: y mandatory;
-}
-
-.section {
-  min-height: 100vh;
-  scroll-snap-align: start;
-  padding: 40px;
-}
-
-.landing-header {
-  text-align: center;
-  width: 100%;
-  max-width: 700px;
-  padding: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.profile-pic {
-  width: 40%;
-  height: 40%;
-  border-radius: 10px;
-  margin-right: 20px;
-}
-
-.landing-header h1 {
-  font-family: 'Inter', sans-serif;
-  font-weight: 400;
-  font-size: 3rem;
-  color: #4e4e4e;
-  margin-bottom: 20px;
-}
-
-.landing-header p {
-  font-family: 'Inter', sans-serif;
-  font-weight: 700;
-  font-size: 4rem;
-  color: #6a6a6a;
-  margin-top: 15px;
-}
-
 #aboutme,
 #experience,
 #projects,
@@ -142,7 +141,7 @@ body {
   min-height: 100vh;
   scroll-snap-align: start;
   padding: 40px;
-  width: 100%;
+  width: calc(100% - 60px);
   box-sizing: border-box;
   display: flex;
   justify-content: center;
