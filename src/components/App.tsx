@@ -6,10 +6,14 @@ import About from './About';
 import Experience from './Experience';
 import Projects from './Projects';
 import Contact from './Contact';
-const profilePic = require('../assets/profile_pic.jpg');
 import { Element } from 'react-scroll';
+import TypingEffect from './Typing';
 
 const App = () => {
+  const sentence = 'FullStack Web Developer';
+  const speed = 100;
+  const resetDelay = 2000;
+
   return (
     <Router>
       <div className='landing-page'>
@@ -19,10 +23,14 @@ const App = () => {
             path='/'
             element={
               <div className='landing-header section' id='home'>
-                <img src={profilePic} alt='Grace' className='profile-pic' />
-                <h1>Grace Lo</h1>
-                <p>Full Stack Developer</p>
-                <h3>.</h3>
+                <h1>
+                  Hello, I'm <b>Grace Lo</b>.
+                </h1>
+                <TypingEffect
+                  sentence={sentence}
+                  speed={speed}
+                  resetDelay={2000}
+                />
               </div>
             }
           />

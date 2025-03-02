@@ -53,12 +53,35 @@ body {
   margin: 0;
 }
 
-.landing-header p {
-  font-family: 'Inter', sans-serif;
-  font-weight: 700;
-  font-size: 4rem;
-  color: #6a6a6a;
-  margin: 0;
+.typing-container {
+  font-family: 'Courier New', monospace;
+  font-size: 20px;
+  color: #ffffff;
+  background-color: #6a6a6a;
+  padding: 10px;
+  border-radius: 5px;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-top: 15px;
+}
+
+.text {
+  display: inline;
+}
+
+.cursor {
+  display: inline-block;
+  width: 10px;
+  background-color: #ffffff;
+  animation: blink 0.8s infinite step-end;
+  margin-left: 2px;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
 }
 
 .navbar {
