@@ -37,17 +37,17 @@ const App = () => {
                 <div className='socials'>
                   <Socials />
                 </div>
-                <button className='explore-section'>
-                  <span
-                    style={{
-                      color: '#4e4e4e',
-                      display: 'block',
-                      fontSize: '15px',
-                    }}
-                  >
-                    Explore
-                  </span>
-                  <Link to='aboutme' smooth={true} duration={200}>
+                <Link to='aboutme' smooth={true} duration={200}>
+                  <button className='explore-section'>
+                    <span
+                      style={{
+                        color: '#4e4e4e',
+                        display: 'block',
+                        fontSize: '15px',
+                      }}
+                    >
+                      Explore
+                    </span>
                     <div className='explore-btn'>
                       <ArrowDownwardIcon
                         sx={{
@@ -56,8 +56,8 @@ const App = () => {
                         }}
                       />
                     </div>
-                  </Link>
-                </button>
+                  </button>
+                </Link>
               </div>
             }
           />
