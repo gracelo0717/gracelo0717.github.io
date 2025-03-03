@@ -84,6 +84,10 @@ body {
   }
 }
 
+.socials {
+  margin-top: 20px;
+}
+
 .navbar {
   display: flex;
   flex-direction: column;

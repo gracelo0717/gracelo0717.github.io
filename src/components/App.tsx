@@ -8,6 +8,7 @@ import Projects from './Projects';
 import Contact from './Contact';
 import { Element } from 'react-scroll';
 import TypingEffect from './Typing';
+import Socials from './Socials';
 
 const App = () => {
   const sentence = 'FullStack Web Developer';
@@ -31,6 +32,9 @@ const App = () => {
                   speed={speed}
                   resetDelay={2000}
                 />
+                <div className='socials'>
+                  <Socials />
+                </div>
               </div>
             }
           />
