@@ -1,4 +1,5 @@
 import ReactDOM from 'react-dom/client';
+import { Link } from 'react-scroll';
 import '../styles.css';
 import Navbar from '../components/Navbar';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -9,6 +10,7 @@ import Contact from './Contact';
 import { Element } from 'react-scroll';
 import TypingEffect from './Typing';
 import Socials from './Socials';
+import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 
 const App = () => {
   const sentence = 'FullStack Web Developer';
@@ -35,6 +37,27 @@ const App = () => {
                 <div className='socials'>
                   <Socials />
                 </div>
+                <button className='explore-section'>
+                  <span
+                    style={{
+                      color: '#4e4e4e',
+                      display: 'block',
+                      fontSize: '15px',
+                    }}
+                  >
+                    Explore
+                  </span>
+                  <Link to='aboutme' smooth={true} duration={200}>
+                    <div className='explore-btn'>
+                      <ArrowDownwardIcon
+                        sx={{
+                          fontSize: '30px',
+                          color: '#4e4e4e',
+                        }}
+                      />
+                    </div>
+                  </Link>
+                </button>
               </div>
             }
           />
