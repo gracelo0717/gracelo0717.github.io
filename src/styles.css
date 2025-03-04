@@ -7,7 +7,7 @@ body {
   padding: 0;
   height: 100%;
   font-family: 'Inter', sans-serif;
-  background-color: #d7d0c3;
+  background: linear-gradient(180deg, #d7d0c3, #4e4e4e);
 }
 
 .landing-page {
@@ -19,6 +19,7 @@ body {
   overflow-y: auto;
   scroll-snap-type: y mandatory;
   margin-left: 60px;
+  background: url('assets/computer.png') no-repeat 415px 320px;
 }
 
 .section {
