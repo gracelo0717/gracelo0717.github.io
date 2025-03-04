@@ -19,7 +19,13 @@ body {
   overflow-y: auto;
   scroll-snap-type: y mandatory;
   margin-left: 60px;
-  background: url('assets/computer.png') no-repeat 415px 320px;
+  background: url('assets/computer.png') no-repeat 415px 320px,
+    radial-gradient(
+      circle,
+      rgba(255, 255, 255, 0.7) 10%,
+      rgba(255, 255, 255, 0) 70%
+    ),
+    url('assets/light.png') no-repeat 585px -45px;
 }
 
 .section {
