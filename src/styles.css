@@ -205,7 +205,6 @@ body {
   flex-direction: column;
   margin-left: 60px;
   width: calc(100% - 60px);
-  text-align: center;
 }
 
 h2 {
@@ -213,6 +212,13 @@ h2 {
   color: #4e4e4e;
   margin-bottom: 20px;
   font-weight: 600;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .profile-container {
