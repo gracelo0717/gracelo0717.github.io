@@ -25,7 +25,8 @@ body {
       rgba(255, 255, 255, 0.7) 10%,
       rgba(255, 255, 255, 0) 70%
     ),
-    url('assets/light.png') no-repeat 585px -45px;
+    url('assets/light.png') no-repeat 535px -65px;
+  background-size: auto, auto, 25%;
 }
 
 .section {
