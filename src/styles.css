@@ -7,7 +7,9 @@ body {
   padding: 0;
   height: 100%;
   font-family: 'Inter', sans-serif;
-  background: linear-gradient(180deg, #d7d0c3, #4e4e4e);
+  background-color: #a89f93;
+  display: flex;
+  flex-direction: column;
 }
 
 .landing-page {
@@ -45,6 +47,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-left: 0;
 }
 
 .profile-pic {
@@ -200,4 +203,52 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-left: 60px;
+  width: calc(100% - 60px);
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: #4e4e4e;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-pic {
+  width: 15%;
+  height: auto;
+  border-radius: 20%;
+  margin-bottom: 10px;
+}
+
+.profile-caption {
+  max-width: 30%;
+  text-align: center;
+}
+
+.profile-caption p {
+  font-size: 0.8rem;
+  color: #4e4e4e;
+  font-style: italic;
+  margin: 0;
+  line-height: 1.4;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #4e4e4e;
+  max-width: 800px;
+  line-height: 1.6;
+  padding: 0 20px;
+  margin-top: 20px;
 }
