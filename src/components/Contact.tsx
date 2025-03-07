@@ -1,6 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: '',
+  });
+
   return (
     <section id='contact'>
       <h2>Contact Me</h2>
@@ -10,7 +16,9 @@ const Contact = () => {
           type='text'
           id='name'
           name='name'
+          value={formData.name}
           placeholder='Enter your name'
+          required
         />
 
         <label>Email:</label>
@@ -18,17 +26,21 @@ const Contact = () => {
           type='email'
           id='email'
           name='email'
+          value={formData.email}
           placeholder='Enter your email'
+          required
         />
 
         <label>Message: </label>
         <textarea
           id='message'
           name='message'
+          value={formData.message}
           placeholder='Enter your message'
+          required
         ></textarea>
 
-        <button type='button' className='submit-btn'>
+        <button type='submit' className='submit-btn'>
           Submit
         </button>
       </form>
