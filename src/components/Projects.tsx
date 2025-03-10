@@ -28,21 +28,30 @@ const projects: Project[] = [
 const Projects = () => {
   return (
     <section id='projects'>
-      {projects.map((project) => (
-        <div key={project.id} className='project-details'>
-          <img
-            src={project.image}
-            alt={project.name}
-            className='project-image'
-          />
-          <h3>{project.name}</h3>
-          <p>{project.description}</p>
-          <p>
-            <strong>Technologies Used: </strong>
-            {project.technologies.join(', ')}
-          </p>
-        </div>
-      ))}
+      <div className='tab-bar'>
+        {projects.map((project) => (
+          <div key={project.id} className='tab'>
+            <span className='tab-label'>{project.name}</span>
+          </div>
+        ))}
+      </div>
+      <div className='tab-content'>
+        {projects.map((project) => (
+          <div key={project.id} className='project-details'>
+            <img
+              src={project.image}
+              alt={project.name}
+              className='project-image'
+            />
+            <h3>{project.name}</h3>
+            <p>{project.description}</p>
+            <p>
+              <strong>Technologies Used: </strong>
+              {project.technologies.join(', ')}
+            </p>
+          </div>
+        ))}
+      </div>
     </section>
   );
 };
