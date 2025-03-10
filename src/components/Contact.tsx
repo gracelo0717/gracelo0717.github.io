@@ -1,4 +1,5 @@
 import React, { useState, ChangeEvent, FormEvent } from 'react';
+import axios from 'axios';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -8,6 +9,7 @@ const Contact = () => {
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [statusMessage, setStatusMessage] = useState('');
 
   const handleChange = (
     e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -19,10 +21,36 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
-    console.log('Form submitted:', formData);
+    setStatusMessage('');
+
+    const formspreeUrl = 'https://formspree.io/f/moveqeaz';
+
+    const sendFormData = {
+      name: formData.name,
+      email: formData.email,
+      message: formData.message,
+    };
+
+    try {
+      const response = await axios.post(formspreeUrl, sendFormData, {
+        headers: {
+          Accept: 'application/json',
+        },
+      });
+      console.log(response);
+
+      if (response.status === 200) {
+        setStatusMessage('Form submitted successfully!');
+        setFormData({ name: '', email: '', message: '' });
+      }
+    } catch (error) {
+      console.log(error);
+      setStatusMessage('Error submitting the form. Please try again!');
+    }
+
     setIsSubmitting(false);
   };
 
@@ -66,6 +94,7 @@ const Contact = () => {
           {isSubmitting ? 'Submitting...' : 'Submit'}
         </button>
       </form>
+      {statusMessage && <p>{statusMessage}</p>}
     </section>
   );
 };
