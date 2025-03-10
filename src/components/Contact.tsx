@@ -45,10 +45,18 @@ const Contact = () => {
       if (response.status === 200) {
         setStatusMessage('Form submitted successfully!');
         setFormData({ name: '', email: '', message: '' });
+
+        setTimeout(() => {
+          setStatusMessage('');
+        }, 5000);
       }
     } catch (error) {
       console.log(error);
       setStatusMessage('Error submitting the form. Please try again!');
+
+      setTimeout(() => {
+        setStatusMessage('');
+      }, 5000);
     }
 
     setIsSubmitting(false);
