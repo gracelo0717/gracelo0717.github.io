@@ -1,10 +1,48 @@
 import React from 'react';
 
+interface Project {
+  id: number;
+  name: string;
+  description: string;
+  technologies: string[];
+  image: string;
+}
+
+const projects: Project[] = [
+  {
+    id: 1,
+    name: 'Project 1',
+    description: 'Project Description',
+    technologies: ['HTML', 'CSS', 'JavaScript'],
+    image: '',
+  },
+  {
+    id: 2,
+    name: 'Project 2',
+    description: 'Project Description',
+    technologies: ['HTML', 'CSS', 'JavaScript'],
+    image: '',
+  },
+];
+
 const Projects = () => {
   return (
     <section id='projects'>
-      <h2>Projects</h2>
-      <p></p>
+      {projects.map((project) => (
+        <div key={project.id} className='project-details'>
+          <img
+            src={project.image}
+            alt={project.name}
+            className='project-image'
+          />
+          <h3>{project.name}</h3>
+          <p>{project.description}</p>
+          <p>
+            <strong>Technologies Used: </strong>
+            {project.technologies.join(', ')}
+          </p>
+        </div>
+      ))}
     </section>
   );
 };
