@@ -1,4 +1,5 @@
 import React from 'react';
+import chromeImg from '../assets/chrome.png';
 
 interface Project {
   id: number;
@@ -29,6 +30,9 @@ const Projects = () => {
   return (
     <section id='projects'>
       <div className='tab-bar'>
+        <div className='chrome-image-container'>
+          <img src={chromeImg} alt='Chrome' className='chrome-image' />
+        </div>
         {projects.map((project) => (
           <div key={project.id} className='tab'>
             <span className='tab-label'>{project.name}</span>

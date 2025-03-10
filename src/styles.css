@@ -330,6 +330,18 @@ button:hover {
   box-sizing: border-box;
 }
 
+.chrome-image-container {
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+
+.chrome-image {
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+}
+
 .tab {
   padding: 8px 16px;
   font-size: 0.9rem;
