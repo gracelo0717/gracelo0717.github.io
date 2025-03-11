@@ -1,6 +1,5 @@
 import React from 'react';
 import chromeImg from '../assets/chrome.png';
-
 interface Project {
   id: number;
   name: string;
@@ -29,32 +28,35 @@ const projects: Project[] = [
 const Projects = () => {
   return (
     <section id='projects'>
-      <div className='tab-bar'>
-        <div className='chrome-image-container'>
-          <img src={chromeImg} alt='Chrome' className='chrome-image' />
+      <div className='tab-container'>
+        <div className='tab-bar'>
+          <div className='chrome-image-container'>
+            <img src={chromeImg} alt='Chrome' className='chrome-image' />
+          </div>
+          {projects.map((project) => (
+            <div key={project.id} className='tab'>
+              <span className='tab-label'>{project.name}</span>
+            </div>
+          ))}
+          <div className='add-tab-button'>+</div>
         </div>
-        {projects.map((project) => (
-          <div key={project.id} className='tab'>
-            <span className='tab-label'>{project.name}</span>
-          </div>
-        ))}
-      </div>
-      <div className='tab-content'>
-        {projects.map((project) => (
-          <div key={project.id} className='project-details'>
-            <img
-              src={project.image}
-              alt={project.name}
-              className='project-image'
-            />
-            <h3>{project.name}</h3>
-            <p>{project.description}</p>
-            <p>
-              <strong>Technologies Used: </strong>
-              {project.technologies.join(', ')}
-            </p>
-          </div>
-        ))}
+        <div className='tab-content'>
+          {projects.map((project) => (
+            <div key={project.id} className='project-details'>
+              <img
+                src={project.image}
+                alt={project.name}
+                className='project-image'
+              />
+              <h3>{project.name}</h3>
+              <p>{project.description}</p>
+              <p>
+                <strong>Technologies Used: </strong>
+                {project.technologies.join(', ')}
+              </p>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
