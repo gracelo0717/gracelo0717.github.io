@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import chromeImg from '../assets/chrome.png';
 import futureProject from '../assets/future-project.jpeg';
+import DeClustor from '../assets/DeClustor.gif';
 
 interface Project {
   id: number;
@@ -13,10 +14,20 @@ interface Project {
 const initialProjects: Project[] = [
   {
     id: 1,
-    name: 'Project 1',
-    description: 'Project Description',
-    technologies: ['HTML', 'CSS', 'JavaScript'],
-    image: '',
+    name: 'DeClustor',
+    description: `DeClustor is a user-friendly dashboard designed to streamline the management of AWS ECS environments. It offers a centralized interface to monitor multiple AWS accounts, track real-time metrics, and manage services across various ECS clusters. With customizable alert thresholds, detailed task and cluster metric graphs, and the ability to generate comprehensive reports, DeClustor simplifies and enhances the monitoring process.`,
+    technologies: [
+      'Javascript',
+      'React',
+      'Node',
+      'Express',
+      'SQLite3',
+      'WebSocket',
+      'Redis',
+      'AWS',
+      'DockerHub',
+    ],
+    image: DeClustor,
   },
   {
     id: 2,
@@ -42,7 +53,7 @@ const Projects = () => {
       id: projects.length + 1,
       name: 'Future Projects',
       description: `Always on the lookout for exciting projects! Connect with me and I could help bring your ideas to life!`,
-      technologies: ['TBD: Open to exploring new tools and tech'],
+      technologies: ['TBD, open to exploring new tools and tech'],
       image: futureProject,
     };
     setProjects([...projects, newProject]);
