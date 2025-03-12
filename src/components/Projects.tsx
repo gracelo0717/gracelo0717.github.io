@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import chromeImg from '../assets/chrome.png';
 import futureProject from '../assets/future-project.jpeg';
 import DeClustor from '../assets/DeClustor.gif';
+import url from '../assets/url.png';
 
 interface Project {
   id: number;
@@ -89,6 +90,7 @@ const Projects = () => {
             +
           </button>
         </div>
+        <img src={url} alt='url' className='url-image' />
         <div className='tab-content'>
           {projects.map(
             (project) =>
