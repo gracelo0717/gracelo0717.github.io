@@ -3,6 +3,7 @@ import chromeImg from '../assets/chrome.png';
 import futureProject from '../assets/future-project.jpeg';
 import DeClustor from '../assets/DeClustor.gif';
 import url from '../assets/url.png';
+import syncify from '../assets/syncify.gif';
 
 interface Project {
   id: number;
@@ -32,10 +33,19 @@ const initialProjects: Project[] = [
   },
   {
     id: 2,
-    name: 'Project 2',
-    description: 'Project Description',
-    technologies: ['HTML', 'CSS', 'JavaScript'],
-    image: '',
+    name: 'Syncify',
+    description: `Syncify is a full-stack web application that allows users to effortlessly convert their Spotify playlists to YouTube and automatically generate corresponding playlists on the platform. It integrates Spotify and YouTube APIs to facilitate seamless playlist migration. With secure user authentication powered by Spotify and YouTube OAuth, users can easily log in and manage their playlists across both services. Syncify simplifies the process of syncing music libraries between platforms, ensuring a smooth and personalized listening experience.`,
+    technologies: [
+      'JavaScript',
+      'HTML',
+      'CSS',
+      'React',
+      'Node.js',
+      'Spotify API',
+      'YouTube API',
+      'OAuth',
+    ],
+    image: syncify,
   },
 ];
 
