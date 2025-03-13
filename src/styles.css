@@ -405,18 +405,22 @@ button:hover {
 .project-details {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
   text-align: center;
   position: relative;
+  padding: 20px;
+  width: 960px;
+  height: 725px;
+  margin-top: 20px;
 }
 
 .project-image {
-  width: 85%;
-  max-width: 800px;
+  width: 100%;
+  max-width: 600px;
   height: auto;
-  border-radius: 8px;
-  margin-bottom: 10px;
-  margin-top: 30px;
+  object-fit: cover;
+  margin-bottom: 20px;
 }
 
 .project-details h3 {
