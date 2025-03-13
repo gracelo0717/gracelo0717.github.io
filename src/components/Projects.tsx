@@ -69,6 +69,9 @@ const Projects = () => {
           <div className='chrome-image-container'>
             <img src={chromeImg} alt='Chrome' className='chrome-image' />
           </div>
+          <div>
+            <img src={url} alt='url' className='url-image' />
+          </div>
           {projects.map((project) => (
             <div
               key={project.id}
@@ -90,7 +93,6 @@ const Projects = () => {
             +
           </button>
         </div>
-        <img src={url} alt='url' className='url-image' />
         <div className='tab-content'>
           {projects.map(
             (project) =>
