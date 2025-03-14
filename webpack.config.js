@@ -2,12 +2,12 @@ const path = require('path');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  mode: 'development',
+  mode: process.env.NODE_ENV === 'production' ? 'production' : 'development',
   entry: path.resolve(__dirname, 'src/components/App.tsx'),
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
-    publicPath: '/',
+    publicPath: process.env.NODE_ENV === 'production' ? '/portfolio/' : '/',
   },
   plugins: [
     new HTMLWebpackPlugin({
