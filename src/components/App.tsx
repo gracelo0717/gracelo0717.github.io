@@ -18,7 +18,7 @@ const App = () => {
   const resetDelay = 2000;
 
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router>
       <div className='landing-page'>
         <Navbar />
         <Routes>
