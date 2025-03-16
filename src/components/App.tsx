@@ -67,7 +67,6 @@ const App = () => {
           <Route path='/contact' element={<Contact />} />
         </Routes>
       </div>
-
       <div className='full-page'>
         <Element name='aboutme' className='section'>
           <About />

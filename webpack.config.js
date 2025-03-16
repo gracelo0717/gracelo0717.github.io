@@ -7,11 +7,11 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
-    publicPath: process.env.NODE_ENV === 'production' ? '/portfolio/' : '/',
+    publicPath: process.env.NODE_ENV === 'production' ? '/' : '/',
   },
   plugins: [
     new HTMLWebpackPlugin({
-      template: 'index.html',
+      template: path.resolve(__dirname, 'index.html'),
     }),
   ],
   module: {
