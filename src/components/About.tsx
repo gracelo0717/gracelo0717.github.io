@@ -1,5 +1,5 @@
 import React from 'react';
-const profilePic = require('../assets/profile_pic.jpg');
+import profilePic from '../assets/profile_pic.jpg';
 
 const About = () => {
   return (
