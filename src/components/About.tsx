@@ -27,7 +27,7 @@ const About = () => {
 
         <div className='tech-sections'>
           <div className='lang-framework'>
-            <h3>Languages & Frameworks</h3>
+            <h3>Languages & Frameworks:</h3>
             <span className='tech'>JavaScript</span>
             <span className='separator'> | </span>
             <span className='tech'>TypeScript</span>
@@ -52,7 +52,7 @@ const About = () => {
           </div>
 
           <div className='technologies'>
-            <h3>Technologies</h3>
+            <h3>Technologies:</h3>
             <span className='tech'>Docker</span>
             <span className='separator'> | </span>
             <span className='tech'>WebSockets</span>
@@ -75,7 +75,7 @@ const About = () => {
           </div>
 
           <div className='aws-infrastructure'>
-            <h3>AWS Infrastructure</h3>
+            <h3>AWS Infrastructure:</h3>
             <span className='tech'>ECR</span>
             <span className='separator'> | </span>
             <span className='tech'>CloudWatch</span>

@@ -7,7 +7,7 @@ body {
   padding: 0;
   height: 100%;
   font-family: 'Inter', sans-serif;
-  background-color: #a89f93;
+  background-color: #6e6e6e;
   display: flex;
   flex-direction: column;
 }
@@ -21,7 +21,7 @@ body {
   overflow-y: auto;
   scroll-snap-type: y mandatory;
   margin-left: 60px;
-  background: url('assets/computer.png') no-repeat 415px 320px,
+  background: url('assets/computer.png') no-repeat 415px 335px,
     radial-gradient(
       circle,
       rgba(255, 255, 255, 0.7) 10%,
@@ -51,6 +51,13 @@ body {
   margin-left: 0;
 }
 
+.landing-header b {
+  color: #8b7e99;
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+  font-size: 3.8rem;
+}
+
 .profile-pic {
   width: 30%;
   height: 30%;
@@ -69,7 +76,7 @@ body {
   font-family: 'Courier New', monospace;
   font-size: 20px;
   color: #ffffff;
-  background-color: #6a6a6a;
+  background-color: #8a7f8d;
   padding: 10px;
   border-radius: 5px;
   display: inline-block;
@@ -98,6 +105,7 @@ body {
 
 .socials {
   margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .explore-section {
@@ -106,8 +114,8 @@ body {
   justify-content: center;
   align-items: center;
   align-content: center;
-  margin-top: 50px;
-  background-color: #b5a99f;
+  margin-top: 20px;
+  background-color: #8a7f8d;
   color: white;
   border: #4e4e4e 2px solid;
   padding-right: 0;
@@ -116,6 +124,7 @@ body {
 .explore-section:hover {
   cursor: pointer;
   transform: scale(1.1);
+  background-color: #7d6e7e;
 }
 
 .navbar {
@@ -128,12 +137,12 @@ body {
   left: 0;
   width: 60px;
   height: 50vh;
-  background-color: #b5a99f;
+  background-color: #8a7f8d;
   transform: translateY(-50%);
   padding: 0;
   z-index: 10;
   gap: 10px;
-  box-shadow: 8px 0 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 4px 0 8px rgba(0, 0, 0, 0.15);
   transition: all 0.3s ease;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
@@ -152,7 +161,7 @@ body {
 }
 
 .navbar-item:hover {
-  background-color: #6a6a6a;
+  background-color: #685b69;
   border-radius: 5px;
 }
 
@@ -164,10 +173,12 @@ body {
   transform: translateY(-50%);
   margin-left: 10px;
   font-size: 1rem;
-  color: #4e4e4e;
+  color: #1a1a1a;
   white-space: nowrap;
   opacity: 0;
   transition: opacity 0.3s ease;
+  font-family: 'Bebas Neue', sans-serif;
+  text-transform: uppercase;
 }
 
 .navbar-item:hover .navbar-label {
@@ -176,7 +187,7 @@ body {
 }
 
 .navbar-link {
-  color: #4e4e4e;
+  color: #333333;
   text-decoration: none;
   font-size: 1.5rem;
   padding: 10px;
@@ -184,7 +195,7 @@ body {
 }
 
 .navbar-item:hover .navbar-link {
-  color: #fff;
+  color: white;
 }
 
 .navbar-link:hover {
@@ -209,7 +220,7 @@ body {
 
 h2 {
   font-size: 2.5rem;
-  color: #4e4e4e;
+  color: #333333;
   margin-bottom: 20px;
   font-weight: 600;
 }
@@ -242,7 +253,7 @@ h2 {
 
 .profile-caption p {
   font-size: 0.8rem;
-  color: #4e4e4e;
+  color: #1a1a1a;
   font-style: italic;
   margin: 0;
   line-height: 1.4;
@@ -252,11 +263,15 @@ h2 {
 
 p {
   font-size: 1.2rem;
-  color: #4e4e4e;
+  color: #1a1a1a;
   max-width: 800px;
   line-height: 1.6;
   padding: 0 20px;
   margin-top: 20px;
+}
+
+.tech-sections {
+  color: #1a1a1a;
 }
 
 /* Contact */
@@ -275,6 +290,7 @@ p {
 label {
   font-size: 1rem;
   margin-bottom: 5px;
+  color: #1a1a1a;
 }
 
 input,
@@ -300,7 +316,7 @@ button {
 }
 
 button:hover {
-  background-color: #45a049;
+  background-color: #8b7e99;
 }
 
 /* Projects */
@@ -366,7 +382,7 @@ button:hover {
   font-size: 0.9rem;
   cursor: pointer;
   font-weight: 200;
-  color: #333;
+  color: #1a1a1a;
   border-radius: 5px 5px 0 0;
   transition: all 0.3s ease;
 }
@@ -376,7 +392,7 @@ button:hover {
 }
 
 .tab.active {
-  background-color: #4e4e4e;
+  background-color: #7d6e7e;
   color: white;
 }
 
@@ -386,7 +402,7 @@ button:hover {
   margin-bottom: 5px;
   margin-left: 5px;
   font-size: 18px;
-  color: #333;
+  color: #1a1a1a;
   cursor: pointer;
   border-radius: 5px;
   display: flex;
@@ -423,21 +439,18 @@ button:hover {
   margin-bottom: 20px;
 }
 
-.project-details h3 {
-  font-size: 2rem;
-  margin-bottom: 10px;
-  margin-top: 10px;
-}
-
-.project-details p {
+.tab-content p {
+  color: #1a1a1a;
   font-family: 'Jost', serif;
   font-size: 1.2rem;
-  color: #333;
   line-height: 1.5;
   width: 85%;
   max-width: 1000px;
 }
 
-.project-details strong {
-  font-weight: bold;
+.tab-content h3 {
+  color: #333333;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }

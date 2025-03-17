@@ -41,7 +41,7 @@ const App = () => {
                   <button className='explore-section'>
                     <span
                       style={{
-                        color: '#4e4e4e',
+                        color: 'white',
                         display: 'block',
                         fontSize: '15px',
                       }}
@@ -52,7 +52,7 @@ const App = () => {
                       <ArrowDownwardIcon
                         sx={{
                           fontSize: '30px',
-                          color: '#4e4e4e',
+                          color: 'white',
                         }}
                       />
                     </div>
