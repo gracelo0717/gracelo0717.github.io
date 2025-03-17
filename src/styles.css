@@ -202,22 +202,6 @@ body {
   background-color: transparent;
 }
 
-#aboutme,
-#experience,
-#projects,
-#contact {
-  min-height: 100vh;
-  scroll-snap-align: start;
-  padding: 40px;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-left: 60px;
-  width: calc(100% - 60px);
-}
-
 h2 {
   font-size: 2.5rem;
   color: #333333;
@@ -274,49 +258,30 @@ p {
   color: #1a1a1a;
 }
 
-/* Contact */
-.contact-form {
+/* About me */
+#aboutme {
+  min-height: 100vh;
+  scroll-snap-align: start;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 100%;
-  max-width: 600px;
-  background-color: rgba(255, 255, 255, 0.3);
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  margin-left: 60px;
+  width: calc(100% - 60px);
 }
 
-label {
-  font-size: 1rem;
-  margin-bottom: 5px;
-  color: #1a1a1a;
-}
-
-input,
-textarea {
-  padding: 12px;
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 1rem;
-  color: #333;
-  background-color: #f9f9f9;
+/* Experiences */
+#experience {
+  min-height: 100vh;
+  scroll-snap-align: start;
   box-sizing: border-box;
-}
-
-button {
-  background-color: #4e4e4e;
-  color: white;
-  border: none;
-  padding: 12px;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 1rem;
-}
-
-button:hover {
-  background-color: #8b7e99;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 60px;
+  width: calc(100% - 60px);
 }
 
 /* Projects */
@@ -328,6 +293,15 @@ button:hover {
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   padding-left: 0;
   padding-right: 0;
+  min-height: 100vh;
+  scroll-snap-align: start;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 60px;
+  width: calc(100% - 60px);
 }
 
 .tab-container {
@@ -453,4 +427,61 @@ button:hover {
   font-size: 2rem;
   margin-bottom: 10px;
   margin-top: 10px;
+}
+
+/* Contact */
+#contact {
+  min-height: 100vh;
+  scroll-snap-align: start;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 60px;
+  width: calc(100% - 60px);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  max-width: 600px;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  font-size: 1rem;
+  margin-bottom: 5px;
+  color: #1a1a1a;
+}
+
+input,
+textarea {
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  color: #333;
+  background-color: #f9f9f9;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4e4e4e;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #8b7e99;
 }
