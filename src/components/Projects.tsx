@@ -4,6 +4,7 @@ import futureProject from '../assets/future-project.jpeg';
 import DeClustor from '../assets/DeClustor.gif';
 import url from '../assets/url.png';
 import syncify from '../assets/syncify.gif';
+import taskify from '../assets/taskify.gif';
 
 interface Project {
   id: number;
@@ -40,12 +41,20 @@ const initialProjects: Project[] = [
       'HTML',
       'CSS',
       'React',
-      'Node.js',
+      'Node',
       'Spotify API',
       'YouTube API',
       'OAuth',
     ],
     image: syncify,
+  },
+  {
+    id: 3,
+    name: 'Taskify',
+    description: `Taskify is a user-friendly task management web app built with TypeScript and Lite Server, designed to help you stay organized and productive. Whether you're managing personal tasks or work projects, Taskify makes it easy to add, track, and complete tasks with just a few clicks. With features like task prioritization, checkboxes for completion, and a clear button to remove completed tasks, Taskify keeps your to-do list up-to-date and clutter-free.\n
+    Upcoming features, including task categories, due dates, reminders, Web3 integration, and more, will take your productivity to the next level. Taskify makes task management effortless, so you can focus on what matters most. Come Taskify with me!`,
+    technologies: ['JavaScript', 'Typescript', 'HTML', 'CSS', 'Lite Server'],
+    image: taskify,
   },
 ];
 
@@ -114,7 +123,11 @@ const Projects = () => {
                     className='project-image'
                   />
                   <h3>{project.name}</h3>
-                  <p>{project.description}</p>
+                  <div className='project-description'>
+                    {project.description.split('\n').map((line, index) => (
+                      <p key={index}>{line}</p>
+                    ))}
+                  </div>
                   <p>
                     <strong>Technologies Used: </strong>
                     {project.technologies.join(', ')}
