@@ -56,6 +56,24 @@ const initialProjects: Project[] = [
     technologies: ['JavaScript', 'Typescript', 'HTML', 'CSS', 'Lite Server'],
     image: taskify,
   },
+  {
+    id: 4,
+    name: 'TouchGrass',
+    description: `TouchGrass is an interactive escape room game built with TypeScript and React, where players collaborate with the OpenAI API to receive dynamic room descriptions and solve puzzles. With a seamless mix of narrative and puzzle-solving, TouchGrass offers an exciting and unpredictable challenge, where every decision influences the adventure.`,
+    technologies: [
+      'OpenAI API',
+      'JavaScript',
+      'Typescript',
+      'React',
+      'Node',
+      'Express',
+      'HTML',
+      'CSS',
+      'Axios',
+      'Vite',
+    ],
+    image: '',
+  },
 ];
 
 const Projects = () => {
