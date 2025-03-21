@@ -5,6 +5,7 @@ import DeClustor from '../assets/DeClustor.gif';
 import url from '../assets/url.png';
 import syncify from '../assets/syncify.gif';
 import taskify from '../assets/taskify.gif';
+import touchgrass from '../assets/touchgrass.png';
 
 interface Project {
   id: number;
@@ -72,7 +73,7 @@ const initialProjects: Project[] = [
       'Axios',
       'Vite',
     ],
-    image: '',
+    image: touchgrass,
   },
 ];
 
