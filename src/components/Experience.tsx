@@ -67,6 +67,11 @@ const Experience = () => {
             configuration tweaks and hot module reloading
           </li>
         </ul>
+        <p>
+          <strong>Technologies Used:</strong> Amazon ECS, Docker, React, Redux,
+          Express.js, Node.js, Javascript, D3.js, Webpack, Material UI, HTML,
+          CSS, Redis, Websocket, SQLite3
+        </p>
       </div>
     </section>
   );
