@@ -491,3 +491,28 @@ button {
 button:hover {
   background-color: #8b7e99;
 }
+
+/* Experience */
+#experience {
+  min-height: 100vh;
+  scroll-snap-align: start;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 60px;
+  width: calc(100% - 60px);
+  padding-top: 40px;
+}
+
+#experience h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #1a1a1a;
+}
+
+#experience p {
+  font-size: 1.1rem;
+  color: #1a1a1a;
+}
