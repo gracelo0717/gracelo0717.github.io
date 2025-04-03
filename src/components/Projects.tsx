@@ -75,6 +75,24 @@ const initialProjects: Project[] = [
     ],
     image: touchgrass,
   },
+  {
+    id: 5,
+    name: 'JobHub',
+    description: `JobHub is a web application designed to streamline the job search process by helping users track and manage their job applications and statuses. With features like application status tracking, customizable reminders, and the ability to store key details, JobHub helps users stay organized, proactive, and focused as they navigate their job search journey.`,
+    technologies: [
+      'OAuth',
+      'JavaScript',
+      'React',
+      'Redux.js',
+      'HTML',
+      'CSS',
+      'PostgreSQL',
+      'Webpack',
+      'Node.js',
+      'Express',
+    ],
+    image: '',
+  },
 ];
 
 const Projects = () => {
