@@ -35,30 +35,6 @@ const initialProjects: Project[] = [
   },
   {
     id: 2,
-    name: 'Syncify',
-    description: `Syncify is a full-stack web application that allows users to effortlessly convert their Spotify playlists to YouTube and automatically generate corresponding playlists on the platform. It integrates Spotify and YouTube APIs to facilitate seamless playlist migration. With secure user authentication powered by Spotify and YouTube OAuth, users can easily log in and manage their playlists across both services. Syncify simplifies the process of syncing music libraries between platforms, ensuring a smooth and personalized listening experience.`,
-    technologies: [
-      'JavaScript',
-      'HTML',
-      'CSS',
-      'React',
-      'Node',
-      'Spotify API',
-      'YouTube API',
-      'OAuth',
-    ],
-    image: syncify,
-  },
-  {
-    id: 3,
-    name: 'Taskify',
-    description: `Taskify is a user-friendly task management web app built with TypeScript and Lite Server, designed to help you stay organized and productive. Whether you're managing personal tasks or work projects, Taskify makes it easy to add, track, and complete tasks with just a few clicks. With features like task prioritization, checkboxes for completion, and a clear button to remove completed tasks, Taskify keeps your to-do list up-to-date and clutter-free.\n
-    Upcoming features, including task categories, due dates, reminders, Web3 integration, and more, will take your productivity to the next level. Taskify makes task management effortless, so you can focus on what matters most. Come Taskify with me!`,
-    technologies: ['JavaScript', 'Typescript', 'HTML', 'CSS', 'Lite Server'],
-    image: taskify,
-  },
-  {
-    id: 4,
     name: 'TouchGrass',
     description: `TouchGrass is an interactive escape room game built with TypeScript and React, where players collaborate with the OpenAI API to receive dynamic room descriptions and solve puzzles. With a seamless mix of narrative and puzzle-solving, TouchGrass offers an exciting and unpredictable challenge, where every decision influences the adventure.`,
     technologies: [
@@ -76,7 +52,47 @@ const initialProjects: Project[] = [
     image: touchgrass,
   },
   {
+    id: 3,
+    name: 'Syncify',
+    description: `Syncify is a full-stack web application that allows users to effortlessly convert their Spotify playlists to YouTube and automatically generate corresponding playlists on the platform. It integrates Spotify and YouTube APIs to facilitate seamless playlist migration. With secure user authentication powered by Spotify and YouTube OAuth, users can easily log in and manage their playlists across both services. Syncify simplifies the process of syncing music libraries between platforms, ensuring a smooth and personalized listening experience.`,
+    technologies: [
+      'JavaScript',
+      'HTML',
+      'CSS',
+      'React',
+      'Node',
+      'Spotify API',
+      'YouTube API',
+      'OAuth',
+    ],
+    image: syncify,
+  },
+  {
+    id: 4,
+    name: 'Taskify',
+    description: `Taskify is a user-friendly task management web app built with TypeScript and Lite Server, designed to help you stay organized and productive. Whether you're managing personal tasks or work projects, Taskify makes it easy to add, track, and complete tasks with just a few clicks. With features like task prioritization, checkboxes for completion, and a clear button to remove completed tasks, Taskify keeps your to-do list up-to-date and clutter-free.\n
+    Upcoming features, including task categories, due dates, reminders, Web3 integration, and more, will take your productivity to the next level. Taskify makes task management effortless, so you can focus on what matters most. Come Taskify with me!`,
+    technologies: ['JavaScript', 'Typescript', 'HTML', 'CSS', 'Lite Server'],
+    image: taskify,
+  },
+  {
     id: 5,
+    name: 'WebRTC',
+    description: `Delivered a presentation on WebRTC protocols at Bractlet Tech Talk Series to 50 attendees, covering STUN/TURN servers for NAT traversal, signaling mechanisms, and WebSocket integration.`,
+    technologies: [
+      'What is WebRTC?',
+      'History',
+      'Who uses it?',
+      'Websockets',
+      'How Websockets work?',
+      'Difference between WebRTC and Websockets',
+      'Why WebRTC?',
+      'How WebRTC work?',
+    ],
+    image: '',
+  },
+  {
+    id: 6,
     name: 'JobHub',
     description: `JobHub is a web application designed to streamline the job search process by helping users track and manage their job applications and statuses. With features like application status tracking, customizable reminders, and the ability to store key details, JobHub helps users stay organized, proactive, and focused as they navigate their job search journey.`,
     technologies: [
@@ -166,7 +182,7 @@ const Projects = () => {
                     ))}
                   </div>
                   <p>
-                    <strong>Technologies Used: </strong>
+                    {/* <strong>Technologies Used: </strong> */}
                     {project.technologies.join(', ')}
                   </p>
                 </div>
