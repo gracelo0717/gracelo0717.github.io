@@ -109,6 +109,19 @@ const initialProjects: Project[] = [
     ],
     image: '',
   },
+  {
+    id: 7,
+    name: 'ClippyNotes',
+    description: ``,
+    technologies: [
+      'Google Chrome Extension',
+      'JavaScript',
+      'JSON',
+      'HTML',
+      'CSS',
+    ],
+    image: '',
+  },
 ];
 
 const Projects = () => {
