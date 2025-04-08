@@ -8,6 +8,7 @@ import taskify from '../assets/taskify.gif';
 import touchgrass from '../assets/touchgrass.png';
 import loading from '../assets/loading.png';
 import webrtc from '../assets/webrtc.png';
+import jobhub from '../assets/jobhub.png';
 
 interface Project {
   id: number;
@@ -94,20 +95,20 @@ const initialProjects: Project[] = [
   {
     id: 7,
     name: 'JobHub',
-    description: `JobHub is a web application designed to streamline the job search process by helping users track and manage their job applications and statuses. With features like application status tracking, customizable reminders, and the ability to store key details, JobHub helps users stay organized, proactive, and focused as they navigate their job search journey.`,
+    description: `JobHub is a web application designed to streamline the job search process by helping users track and manage their job applications and statuses. It helps users stay organized, proactive, and focused as they navigate their job search journey. You got this!`,
     technologies: [
       'OAuth',
       'JavaScript',
       'React',
       'Redux.js',
       'HTML',
-      'CSS',
+      'SCSS',
       'PostgreSQL',
       'Webpack',
       'Node.js',
       'Express',
     ],
-    image: '',
+    image: jobhub,
   },
   {
     id: 8,
