@@ -410,7 +410,7 @@ p {
   max-width: 600px;
   height: auto;
   object-fit: cover;
-  margin-bottom: 0;
+  margin-bottom: 20px;
   margin-top: 50px;
 }
 

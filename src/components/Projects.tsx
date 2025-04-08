@@ -7,6 +7,7 @@ import syncify from '../assets/syncify.gif';
 import taskify from '../assets/taskify.gif';
 import touchgrass from '../assets/touchgrass.png';
 import loading from '../assets/loading.png';
+import webrtc from '../assets/webrtc.png';
 
 interface Project {
   id: number;
@@ -86,18 +87,9 @@ const initialProjects: Project[] = [
   {
     id: 6,
     name: 'WebRTC Tech Talk',
-    description: `Delivered a presentation on WebRTC protocols at Bractlet Tech Talk Series to 50 attendees, covering STUN/TURN servers for NAT traversal, signaling mechanisms, and WebSocket integration.`,
-    technologies: [
-      'What is WebRTC?',
-      'History',
-      'Who uses it?',
-      'Websockets',
-      'How Websockets work?',
-      'Difference between WebRTC and Websockets',
-      'Why WebRTC?',
-      'How WebRTC work?',
-    ],
-    image: '',
+    description: `I stepped out of my comfort zone at the Bractlet Tech Talk Series, where I presented on WebRTC protocols to 50 attendees. I covered key topics such as STUN/TURN servers for NAT traversal, signaling mechanisms, and WebSocket integration.`,
+    technologies: [],
+    image: webrtc,
   },
   {
     id: 7,
