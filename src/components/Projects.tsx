@@ -96,7 +96,7 @@ const initialProjects: Project[] = [
   {
     id: 7,
     name: 'ClippyNotes',
-    description: ``,
+    description: `ClippyNotes is a Google Chrome extension designed to help you take and organize notes while browsing the web. When you're on a webpage, you can quickly jot down your thoughts, and it’ll automatically save the note with the URL, the date, and the time it was taken. This way, you'll always know exactly when and where you made your note, making it easy to come back to later! \n P.S. Microsoft Clippy is the theme and mascot, I’ve brought him back for your note-taking enjoyment!`,
     technologies: [
       'Google Chrome Extension',
       'JavaScript',
