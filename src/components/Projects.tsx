@@ -1,14 +1,15 @@
 import React, { useState } from 'react';
 import chromeImg from '../assets/chrome.png';
-import futureProject from '../assets/future-project.jpeg';
-import DeClustor from '../assets/DeClustor.gif';
 import url from '../assets/url.png';
+import loading from '../assets/loading.png';
+import DeClustor from '../assets/DeClustor.gif';
+import touchgrass from '../assets/touchgrass.png';
 import syncify from '../assets/syncify.gif';
 import taskify from '../assets/taskify.gif';
-import touchgrass from '../assets/touchgrass.png';
-import loading from '../assets/loading.png';
 import webrtc from '../assets/webrtc.png';
+import clippynotes from '../assets/clippynotes.gif';
 import jobhub from '../assets/jobhub.png';
+import futureProject from '../assets/future-project.jpeg';
 
 interface Project {
   id: number;
@@ -94,6 +95,19 @@ const initialProjects: Project[] = [
   },
   {
     id: 7,
+    name: 'ClippyNotes',
+    description: ``,
+    technologies: [
+      'Google Chrome Extension',
+      'JavaScript',
+      'JSON',
+      'HTML',
+      'CSS',
+    ],
+    image: clippynotes,
+  },
+  {
+    id: 8,
     name: 'JobHub',
     description: `JobHub is a web application designed to streamline the job search process by helping users track and manage their job applications and statuses. It helps users stay organized, proactive, and focused as they navigate their job search journey. You got this!`,
     technologies: [
@@ -109,19 +123,6 @@ const initialProjects: Project[] = [
       'Express',
     ],
     image: jobhub,
-  },
-  {
-    id: 8,
-    name: 'ClippyNotes',
-    description: ``,
-    technologies: [
-      'Google Chrome Extension',
-      'JavaScript',
-      'JSON',
-      'HTML',
-      'CSS',
-    ],
-    image: '',
   },
 ];
 
