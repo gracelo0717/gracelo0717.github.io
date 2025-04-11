@@ -25,64 +25,75 @@ const About = () => {
           </p>
         </div>
 
-        <div className='tech-sections'>
-          <div className='lang-framework'>
-            <h3>Languages & Frameworks:</h3>
-            <span className='tech'>JavaScript</span>
-            <span className='separator'> | </span>
-            <span className='tech'>TypeScript</span>
-            <span className='separator'> | </span>
-            <span className='tech'>HTML5</span>
-            <span className='separator'> | </span>
-            <span className='tech'>CSS</span>
-            <span className='separator'> | </span>
-            <span className='tech'>React</span>
-            <span className='separator'> | </span>
-            <span className='tech'>Redux</span>
-            <span className='separator'> | </span>
-            <span className='tech'>MUI</span>
-            <span className='separator'> | </span>
-            <span className='tech'>Node.js</span>
-            <span className='separator'> | </span>
-            <span className='tech'>Express</span>
-            <span className='separator'> | </span>
-            <span className='tech'>SQL</span>
-            <span className='separator'> | </span>
-            <span className='tech'>NoSQL</span>
+        <div className='tech-stack'>
+          <h3>Languages & Libraries</h3>
+          <div className='tech-grid'>
+            <div className='tech-icon' title='JavaScript'>
+              <i className='devicon-javascript-plain colored'></i>
+            </div>
+            <div className='tech-icon' title='TypeScript'>
+              <i className='devicon-typescript-plain colored'></i>
+            </div>
+            <div className='tech-icon' title='HTML5'>
+              <i className='devicon-html5-plain colored'></i>
+            </div>
+            <div className='tech-icon' title='CSS3'>
+              <i className='devicon-css3-plain colored'></i>
+            </div>
+            <div className='tech-icon' title='React'>
+              <i className='devicon-react-original colored'></i>
+            </div>
+            <div className='tech-icon' title='Redux'>
+              <i className='devicon-redux-original colored'></i>
+            </div>
+            <div className='tech-icon' title='Material UI'>
+              <i className='devicon-materialui-plain colored'></i>
+            </div>
           </div>
-
-          <div className='technologies'>
-            <h3>Technologies:</h3>
-            <span className='tech'>Docker</span>
-            <span className='separator'> | </span>
-            <span className='tech'>WebSockets</span>
-            <span className='separator'> | </span>
-            <span className='tech'>WebRTC</span>
-            <span className='separator'> | </span>
-            <span className='tech'>D3.js</span>
-            <span className='separator'> | </span>
-            <span className='tech'>Chart.js</span>
-            <span className='separator'> | </span>
-            <span className='tech'>SQLite3</span>
-            <span className='separator'> | </span>
-            <span className='tech'>Git</span>
-            <span className='separator'> | </span>
-            <span className='tech'>Parcel</span>
-            <span className='separator'> | </span>
-            <span className='tech'>Webpack</span>
-            <span className='separator'> | </span>
-            <span className='tech'>Vite</span>
+          <h3>Databases</h3>
+          <div className='tech-grid'>
+            <div className='tech-icon' title='PostgreSQL'>
+              <i className='devicon-postgresql-plain colored'></i>
+            </div>
+            <div className='tech-icon' title='MongoDB'>
+              <i className='devicon-mongodb-plain colored'></i>
+            </div>
+            <div className='tech-icon' title='SQLite3'>
+              <i className='devicon-sqlite-plain colored'></i>
+            </div>
           </div>
-
-          <div className='aws-infrastructure'>
-            <h3>AWS Infrastructure:</h3>
-            <span className='tech'>ECR</span>
-            <span className='separator'> | </span>
-            <span className='tech'>CloudWatch</span>
-            <span className='separator'> | </span>
-            <span className='tech'>ECS Fargate</span>
-            <span className='separator'> | </span>
-            <span className='tech'>IAM</span>
+          <h3>Frameworks & Runtimes</h3>
+          <div className='tech-grid'>
+            <div className='tech-icon' title='Node.js'>
+              <i className='devicon-nodejs-plain-wordmark colored'></i>
+            </div>
+            <div className='tech-icon' title='Express'>
+              <i className='devicon-express-original colored'></i>
+            </div>
+          </div>
+          <h3>Technologies</h3>
+          <div className='tech-grid'>
+            <div className='tech-icon' title='Docker'>
+              <i className='devicon-docker-plain colored'></i>
+            </div>
+            <div className='tech-icon' title='D3.js'>
+              <i className='devicon-d3js-plain colored'></i>
+            </div>
+            <div className='tech-icon' title='Git'>
+              <i className='devicon-git-plain colored'></i>
+            </div>
+            <div className='tech-icon' title='Webpack'>
+              <i className='devicon-webpack-plain colored'></i>
+            </div>
+            <div className='tech-icon' title='Vite'>
+              <i className='devicon-vitejs-plain colored'></i>
+            </div>
+          </div>
+          <h3>AWS Infrastructure</h3>
+          <div className='tech-grid'>
+            <div className='tech-icon' title='AWS'>
+              <i className='devicon-amazonwebservices-plain-wordmark colored'></i>
+            </div>
           </div>
         </div>
       </div>
