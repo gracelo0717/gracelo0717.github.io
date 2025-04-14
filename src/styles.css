@@ -359,6 +359,10 @@ p {
   width: calc(100% - 60px);
 }
 
+#experience .job h3 {
+  color: #333333;
+}
+
 /* Projects */
 #projects {
   position: relative;
