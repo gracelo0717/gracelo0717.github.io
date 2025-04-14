@@ -210,6 +210,7 @@ h2 {
   font-weight: 600;
 }
 
+/* About me */
 .about-container {
   display: flex;
   flex-direction: column;
@@ -220,12 +221,14 @@ h2 {
 .profile-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  padding-right: 40px;
+  gap: 16px;
 }
 
 .profile-pic {
-  width: 15%;
+  width: 20%;
   height: auto;
   border-radius: 20%;
   margin-bottom: 10px;
@@ -237,11 +240,11 @@ h2 {
 }
 
 .profile-caption p {
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: #1a1a1a;
   font-style: italic;
   margin: 0;
-  line-height: 1.4;
+  line-height: 1.5;
   word-wrap: break-word;
   word-break: break-word;
 }
@@ -259,7 +262,6 @@ p {
   color: #1a1a1a;
 }
 
-/* About me */
 #aboutme {
   min-height: 100vh;
   scroll-snap-align: start;
@@ -268,14 +270,48 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  align-content: space-around;
   margin-left: 60px;
   width: calc(100% - 60px);
 }
 
-.tech-stack {
+#aboutme h2 {
   display: flex;
-  flex-direction: column;
-  max-width: 900px;
+  justify-content: start;
+  margin: 40px;
+}
+
+.about-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+}
+
+.tech-stack {
+  background-color: rgba(255, 255, 255, 0.208);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  margin: auto;
+}
+
+.tech-stack .tech-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-align: center;
+  color: #333333;
+  margin: 0 auto 12px;
+  display: block;
 }
 
 .tech-stack h3 {
@@ -283,7 +319,7 @@ p {
   font-weight: 600;
   margin-bottom: 10px;
   letter-spacing: 0.05em;
-  color: #1a1a1a;
+  color: #333333;
 }
 
 .tech-grid {
