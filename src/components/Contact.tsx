@@ -1,5 +1,6 @@
 import React, { useState, ChangeEvent, FormEvent } from 'react';
 import axios from 'axios';
+import Footer from './Footer';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -103,6 +104,7 @@ const Contact = () => {
         </button>
       </form>
       {statusMessage && <p>{statusMessage}</p>}
+      <Footer />
     </section>
   );
 };
