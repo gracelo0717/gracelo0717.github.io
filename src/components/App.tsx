@@ -11,6 +11,7 @@ import { Element } from 'react-scroll';
 import TypingEffect from './Typing';
 import Socials from './Socials';
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
+import Footer from './Footer';
 
 const App = () => {
   const sentence = 'FullStack Web Developer';
@@ -84,6 +85,7 @@ const App = () => {
           <Contact />
         </Element>
       </div>
+      <Footer />
     </Router>
   );
 };
