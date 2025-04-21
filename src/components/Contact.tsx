@@ -65,8 +65,10 @@ const Contact = () => {
 
   return (
     <section id='contact'>
-      <h2>Get in Touch</h2>
-      <h3>Want to work together, ask a question, or just say hi? Go for it!</h3>
+      <h2 className='contact-heading'>Get in Touch</h2>
+      <h3 className='contact-subheading'>
+        Want to work together, ask a question, or just say hi? Go for it!
+      </h3>
       <form className='contact-form' onSubmit={handleSubmit}>
         <label>Name: </label>
         <input
