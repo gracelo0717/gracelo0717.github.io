@@ -3,7 +3,7 @@ import chromeImg from '../assets/chrome.png';
 import url from '../assets/url.png';
 import loading from '../assets/loading.png';
 import DeClustor from '../assets/DeClustor.gif';
-import touchgrass from '../assets/touchgrass.png';
+import touchgrass from '../assets/touchgrass.gif';
 import syncify from '../assets/syncify.gif';
 import taskify from '../assets/taskify.gif';
 import webrtc from '../assets/webrtc.png';
