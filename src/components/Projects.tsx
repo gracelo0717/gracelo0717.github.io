@@ -6,7 +6,7 @@ import DeClustor from '../assets/DeClustor.gif';
 import touchgrass from '../assets/touchgrass.gif';
 import syncify from '../assets/syncify.gif';
 import taskify from '../assets/taskify.gif';
-import webrtc from '../assets/webrtc.png';
+import webrtc from '../assets/webrtc.gif';
 import clippynotes from '../assets/clippynotes.gif';
 import jobhub from '../assets/jobhub.png';
 import futureProject from '../assets/future-project.jpeg';
