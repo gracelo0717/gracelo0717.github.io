@@ -278,7 +278,8 @@ p {
 #aboutme h2 {
   display: flex;
   justify-content: start;
-  margin: 40px;
+  margin-top: 40px;
+  margin-bottom: 0;
 }
 
 .about-content {
@@ -357,7 +358,11 @@ p {
   align-items: center;
   margin-left: 60px;
   width: calc(100% - 60px);
-  padding-top: 40px;
+}
+
+#experience h2 {
+  margin-top: 40px;
+  margin-bottom: 0;
 }
 
 #experience h3 {
