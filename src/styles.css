@@ -517,6 +517,11 @@ p {
 .project-description p {
   margin-top: 0;
   margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.project-techs {
+  font-size: 1.1rem;
 }
 
 .tab-content h3 {

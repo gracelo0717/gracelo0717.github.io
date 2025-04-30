@@ -196,8 +196,7 @@ const Projects = () => {
                       <p key={index}>{line}</p>
                     ))}
                   </div>
-                  <p>
-                    {/* <strong>Technologies Used: </strong> */}
+                  <p className='project-techs'>
                     {project.technologies.join(', ')}
                   </p>
                 </div>
