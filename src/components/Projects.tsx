@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import chromeImg from '../assets/chrome.png';
 import url from '../assets/url.png';
-import loading from '../assets/loading.png';
+import loading from '../assets/loading.gif';
 import DeClustor from '../assets/DeClustor.gif';
 import touchgrass from '../assets/touchgrass.gif';
 import syncify from '../assets/syncify.gif';
