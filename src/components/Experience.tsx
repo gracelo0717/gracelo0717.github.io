@@ -14,57 +14,54 @@ const Experience = () => {
         </p>
         <ul>
           <li>
-            Enhanced 5 cluster metrics and ensured high availability by
-            integrating AWS ECR and CloudWatch for real-time data insights and
-            automated alerts, optimizing resource management
+            Optimize cluster metrics and ensure high availability by integrating
+            AWS ECR and CloudWatch for real-time insights and automated alerts,
+            optimizing resource management
           </li>
           <li>
-            Developed over 10 reusable React components and applied Higher-Order
-            Components (HOCs) to ensure code consistency, streamline
-            development, and enhance scalability
+            Employ Redux with Redux Thunk for centralized state management and
+            handling asynchronous requests from multiple endpoints
           </li>
           <li>
-            Employed Redux for centralized state management, leveraging the
-            singleton design pattern to simplify state transitions, reduce
-            debugging time, and ensure predictable state handling
+            Boost performance with useState for local state management and React
+            Router for optimized navigation
           </li>
           <li>
-            Boosted performance by incorporating React Hooks and React Router,
-            optimizing rendering and routing processes for faster navigation and
-            reduced network requests
+            Engineer a responsive UI with MUI components, including icons,
+            themes, and color palette, ensuring design consistency
           </li>
           <li>
-            Engineered a responsive user interface with Material UI (MUI),
-            maintaining design consistency across React components
+            Construct a Node.js/Express server to manage HTTP requests across
+            multiple endpoints, using middleware to modularize logic, improve
+            reusability, and enhance scalability
           </li>
           <li>
-            Architected SQLite3 database for robust, ACID-compliant data
-            storage, ensuring data integrity and consistency
+            Architect an SQLite3 database with optimized schema design and
+            ACID-compliant transactions to ensure data integrity
           </li>
           <li>
-            Constructed Node.js/Express server to manage HTTP requests across
-            multiple endpoints, utilizing the middleware design pattern to
-            enhance code reusability and modularize backend requests for
-            improved scalability
+            Design interactive visualizations with D3.js to display real-time
+            performance metrics (CPU, memory, network usage) through dynamic
+            line graphs and pie charts, enabling data-driven insights and
+            performance monitoring
           </li>
           <li>
-            Designed interactive visualizations with D3.js, featuring 5 line
-            graphs and pie charts to display detailed performance metrics such
-            as CPU, memory, and network usage
-          </li>
-          <li>
-            Containerized applications with Docker and deployed to Docker Hub,
+            Containerize applications with Docker and deploy to Docker Hub,
             ensuring consistent environments across development, testing, and
-            production to minimize discrepancies
+            production to streamline deployment and minimize environment
+            discrepancies
           </li>
           <li>
-            Enhanced real-time communication by implementing WebSocket
-            technology, reducing network overhead and accelerating data
-            transmission
+            Enhance real-time communication with WebSockets for continuous
+            updates and notifications, reducing network overhead
           </li>
           <li>
-            Optimized load times by approximately 20% through Webpack
-            configuration tweaks and hot module reloading
+            Develop applications with Webpack, optimizing configuration for
+            faster load times and hot module reloading
+          </li>
+          <li>
+            Create a React-based front-end with reusable components and HOCs,
+            enabling a scalable and maintainable UI architecture
           </li>
         </ul>
         <p>
