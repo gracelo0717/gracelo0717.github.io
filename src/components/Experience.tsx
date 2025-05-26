@@ -10,7 +10,7 @@ const Experience = () => {
           <strong> DeClustor</strong>
         </h3>
         <p>
-          <strong>Duration:</strong> May 2024 – Present
+          <strong>Duration:</strong> 2024 – Present
         </p>
         <ul>
           <li>
