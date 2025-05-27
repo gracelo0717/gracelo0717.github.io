@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import chromeImg from '../assets/chrome.png';
 import url from '../assets/url.png';
 import loading from '../assets/loading.gif';

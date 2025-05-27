@@ -32,7 +32,7 @@ const App = () => {
                 <TypingEffect
                   sentence={sentence}
                   speed={speed}
-                  resetDelay={2000}
+                  resetDelay={resetDelay}
                 />
                 <div className='socials'>
                   <Socials />

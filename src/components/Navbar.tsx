@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link } from 'react-scroll';
 import HomeIcon from '@mui/icons-material/Home';
 import PersonIcon from '@mui/icons-material/Person';
